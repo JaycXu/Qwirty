@@ -1,0 +1,79 @@
+.main-nav {
+    display: flex;
+    background-color: green;
+    justify-content: space-between;
+    height: 2rem;
+}
+
+.full-width {
+    display: none;
+}
+
+.short-width {
+    display: flex;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0.3rem;
+}
+
+a {
+    padding: 0.5rem;
+    border-right: 0.1rem solid white;
+}
+
+.nav-list li:last-of-type a {
+    border: none;
+    }
+
+.company-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-left: 5rem;
+    color: rgb(38, 68, 7);
+}
+
+.search-form {
+    display: flex;
+    /* flex-grow: 1; */
+    margin-top: 0.1rem;
+    border-bottom: 1px solid green;
+    width: 60rem;
+    height: 2rem;
+}
+
+input {
+    flex-grow: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 81, 97);
+}
+
+.credit-offer {
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 2rem;
+    font-size: larger;
+    color: aliceblue;
+}
+
+.credit-offer:hover {
+    color: blue;
+}
+
+@media screen and (min-width: 768px) {
+    .full-width {
+        display: flex;
+    }
+
+    .short-width {
+        display: none;
+    }
+}
